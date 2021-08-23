@@ -1,11 +1,6 @@
 import React, { useState } from 'react';
 import './SponsoredBy.scss';
 import SponsorsPopUp from '../SponsorsPopUp/SponsorsPopUp';
-// import img1 from './../../Images/logo-bbc.webp';
-// import img2 from './../../Images/logo-bi.webp';
-// import img3 from './../../Images/logo-forbes.webp';
-// import img4 from './../../Images/logo-techcrunch.webp';
-import bannerImg from './../../Images/sample.png';
 const driveURL = 'https://drive.google.com/uc?id=';
 
 function SponsoredBy() {

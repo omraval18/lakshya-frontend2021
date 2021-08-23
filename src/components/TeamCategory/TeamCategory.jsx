@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Tabs, Tab } from '@material-ui/core';
 import Carousel from 'react-elastic-carousel';
 import Cards from '../../components/Team-Cards/Cards';
-import Loader from 'react-loader-spinner';
 import './TeamCategory.scss';
 import TabPanel from '../Tab-Panel/TabPanel';
 import useStyles from './styles';
@@ -38,9 +37,6 @@ function TeamCategory() {
   const [value, setValue] = useState(0);
   const [menuItem, setMenuItem] = useState(Data);
   const classes = useStyles();
-  const [isLoading, setIsLoading] = useState(true);
-
-  
 
   const handleTabs = (e, val) => {
     setValue(val);

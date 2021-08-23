@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import NavBar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import ContactPage from './pages/ContactPage/ContactPage';
@@ -18,16 +18,11 @@ import Sections from './pages/Sections/Sections';
 import GlimpsePage from './pages/GlimpsePage/GlimpsePage';
 
 function App() {
-  const [loading, setLoading] = useState(true);
-
-  // useEffect(() => {
-  //   setTimeout(setLoading(false), 300);
-  // }, []);
+  
 
   // function App() {
   return (
     <>
-      {/* {loading === false ? ( */}
       <Router>
         <NavBar />
         <Switch>
@@ -82,9 +77,7 @@ function App() {
         </Switch>
         <Footer />
       </Router>
-      {/* ) : (
-        <Loading />
-      )} */}
+      
     </>
   );
 }

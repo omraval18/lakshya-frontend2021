@@ -10,6 +10,7 @@ function ContactForm() {
   const [message, setMessage] = useState('');
   const [error, setError] = useState('');
   const [success, setSuccess] = useState('');
+ 
 
   const [open, setOpen] = React.useState(false);
 
@@ -46,6 +47,7 @@ function ContactForm() {
     } else {
       setSuccess(result.message[0]);
       setOpen(true);
+      console.log(success);
     }
     handleClickOpen();
     setName('');

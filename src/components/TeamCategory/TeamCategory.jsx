@@ -35,7 +35,6 @@ const tabData = [
 
 function TeamCategory() {
   const [value, setValue] = useState(0);
-  const [menuItem, setMenuItem] = useState(Data);
   const classes = useStyles();
 
   const handleTabs = (e, val) => {
@@ -70,7 +69,7 @@ function TeamCategory() {
             >
               <div>
                 <Carousel breakPoints={breakPoints}>
-                  {menuItem
+                  {Data
                     .filter((item) => item.team === `${data.category}`)
                     .map((item, index) => (
                       <Cards
